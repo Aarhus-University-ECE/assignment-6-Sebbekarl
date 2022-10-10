@@ -1,10 +1,14 @@
 #include <stdio.h>
 #include <assert.h>
 
-int max(int* numbers, int size)
+int max(int *numbers, int size)
 {
-    // Excercise 2
-    // Implement your code below...
+    int biggest_int = numbers[0];
 
-    return -1;
+    for (int i = 0; i < size; i++)
+    {
+        if (numbers[i] > biggest_int)
+            biggest_int = numbers[i];
+    }
+    return biggest_int;
 }
